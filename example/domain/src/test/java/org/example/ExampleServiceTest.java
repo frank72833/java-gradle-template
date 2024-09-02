@@ -1,15 +1,15 @@
-package org.example.service;
+package org.example;
+
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class MyServiceTest {
-
-    private final MyService sut = new MyService();
+class ExampleServiceTest {
+    private final ExampleService sut = new ExampleService();
 
     @Test
-    public void givenMyService__whenCallingGreeting__thenReturnHelloWorld() {
+    public void givenExampleService_whenCallingGreeting_thenReturnHelloWorld() {
         final var result = sut.getGreeting();
 
         assertEquals("Hello world!", result);

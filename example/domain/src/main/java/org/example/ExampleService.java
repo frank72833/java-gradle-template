@@ -1,7 +1,6 @@
-package org.example.service;
+package org.example;
 
-public class MyService {
-
+public class ExampleService {
     public String getGreeting() {
         return "Hello world!";
     }
