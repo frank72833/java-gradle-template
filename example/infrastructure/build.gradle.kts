@@ -11,3 +11,7 @@ plugins {
 dependencies {
     implementation(project(":example:domain"))
 }
+
+dependencies {
+    testImplementation(libs.assertj.core)
+}
