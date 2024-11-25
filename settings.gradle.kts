@@ -17,6 +17,5 @@ plugins {
 
 rootProject.name = "java-gradle-template"
 include(
-    "example",
-    "example:domain",
+    "example"
 )
