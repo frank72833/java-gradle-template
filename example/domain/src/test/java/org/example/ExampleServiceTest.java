@@ -3,7 +3,7 @@ package org.example;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class ExampleServiceTest {
     private final ExampleService sut = new ExampleService();
@@ -12,6 +12,6 @@ class ExampleServiceTest {
     public void givenExampleService_whenCallingGreeting_thenReturnHelloWorld() {
         final var result = sut.getGreeting();
 
-        assertEquals("Hello world!", result);
+        assertThat(result).isEqualTo("Hello world!");
     }
 }
